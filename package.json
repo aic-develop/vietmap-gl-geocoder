@@ -1,13 +1,13 @@
 {
-  "name": "vietmap-gl-geocoder",
-  "version": "1.1.1",
-  "description": "A geocoder control for Mapbox GL JS",
+  "name": "vietmaps-gl-geocoder",
+  "version": "1.0.0",
+  "description": "A geocoder control for VietMap GL JS",
   "main": "lib/index.js",
-  "unpkg": "dist/mapbox-gl-geocoder.min.js",
-  "style": "lib/mapbox-gl-geocoder.css",
+  "unpkg": "dist/vietmap-gl-geocoder.min.js",
+  "style": "lib/vietmap-gl-geocoder.css",
   "scripts": {
     "start": "budo debug/index.js --live -- -t brfs ",
-    "prepublish": "NODE_ENV=production && mkdir -p dist && browserify --standalone MapboxGeocoder lib/index.js | uglifyjs -c -m > dist/mapbox-gl-geocoder.min.js && cp lib/mapbox-gl-geocoder.css dist/",
+    "prepublish": "NODE_ENV=production && mkdir -p dist && browserify --standalone MapboxGeocoder lib/index.js | uglifyjs -c -m > dist/vietmap-gl-geocoder.min.js && cp lib/vietmap-gl-geocoder.css dist/",
     "test": "browserify -t envify test/index.js test/events.test.js | smokestack -b firefox | tap-status | tap-color",
     "docs": "documentation build lib/index.js --format=md > API.md",
     "pretest": "npm run lint",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mapbox/mapbox-gl-geocoder.git"
+    "url": "https://github.com/aic-develop/vietmap-gl-geocoder.git"
   },
   "engines": {
     "node": ">=6"
@@ -33,9 +33,9 @@
   "author": "Mapbox",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mapbox/mapbox-gl-geocoder/issues"
+    "url": "https://github.com/aic-develop/vietmap-gl-geocoder/issues"
   },
-  "homepage": "https://github.com/mapbox/mapbox-gl-geocoder#readme",
+  "homepage": "https://github.com/aic-develop/vietmap-gl-geocoder#readme",
   "devDependencies": {
     "brfs": "^2.0.2",
     "browserify": "^16.2.3",
@@ -59,13 +59,12 @@
     "mapbox-gl": ">= 0.47.0 < 2.0.0"
   },
   "dependencies": {
-    "@mapbox/mapbox-sdk": "^0.5.0",
     "lodash.debounce": "^4.0.6",
     "nanoid": "^2.0.1",
     "subtag": "^0.5.0",
     "suggestions": "^1.6.0",
-    "vietmap-gl": "^1.0.3-dev",
-    "vietmap-sdk": "^1.0.3",
+    "vietmaps-gl": "^1.0.0",
+    "vietmaps-sdk": "^1.0.0",
     "xtend": "^4.0.1"
   },
   "lint-staged": {

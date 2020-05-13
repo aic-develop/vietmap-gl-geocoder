@@ -1,7 +1,7 @@
-Mapbox GL Geocoder [![Build Status](https://travis-ci.com/mapbox/mapbox-gl-geocoder.svg?branch=master)](https://travis-ci.com/mapbox/mapbox-gl-geocoder)
+VietMap GL Geocoder [![Build Status](https://travis-ci.com/mapbox/mapbox-gl-geocoder.svg?branch=master)](https://travis-ci.com/mapbox/mapbox-gl-geocoder)
 ---
 
-A geocoder control for [mapbox-gl-js](https://github.com/mapbox/mapbox-gl-js) using the [Mapbox Geocoding API](https://docs.mapbox.com/api/search/#geocoding). For a JavaScript geocoder without a graphical user interface see the [Mapbox SDK for JS](https://github.com/mapbox/mapbox-sdk-js/blob/master/docs/services.md#geocoding).
+A geocoder control for [vietmaps-gl-js](https://github.com/mapbox/mapbox-gl-js) using the [Mapbox Geocoding API](https://docs.mapbox.com/api/search/#geocoding). For a JavaScript geocoder without a graphical user interface see the [Mapbox SDK for JS](https://github.com/mapbox/mapbox-sdk-js/blob/master/docs/services.md#geocoding).
 
 ### Usage
 
@@ -16,7 +16,7 @@ This module exports a single class called MapboxGeocoder as its default export,
 so in browserify or webpack, you can require it like:
 
 ```js
-var MapboxGeocoder = require('@mapbox/mapbox-gl-geocoder');
+var MapboxGeocoder = require('vietmaps-gl-geocoder');
 ```
 
 ###  Using without a Map
