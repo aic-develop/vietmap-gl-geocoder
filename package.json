@@ -1,6 +1,6 @@
 {
   "name": "vietmaps-gl-geocoder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A geocoder control for VietMap GL JS",
   "main": "lib/index.js",
   "unpkg": "dist/vietmap-gl-geocoder.min.js",
